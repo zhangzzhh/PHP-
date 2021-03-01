@@ -1,0 +1,7 @@
+<?php
+
+$handle = fopen('./a.txt', 'r');
+        while (!feof($handle)) {
+            echo fgets($handle, 1024);
+            } 
+        fclose($handle);

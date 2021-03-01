@@ -1,0 +1,8 @@
+<?php
+              /***写文件  ***/
+    $filename='./a.txt';
+    $res = fopen($filename,'w');//打开文件并写文件 ，如果没有则创建
+    $int = fwrite($res,'这次我不想输了');  //写入程序有覆盖的作用
+    //echo $filename;
+    var_dump($res);
+    fclose($res);

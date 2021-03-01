@@ -1,5 +1,5 @@
 <?php
-
+        /***读取文件***/
 $handle = fopen('./a.txt', 'r');
         while (!feof($handle)) {
             echo fgets($handle, 1024);
